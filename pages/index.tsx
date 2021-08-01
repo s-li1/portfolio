@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import Link from 'next/dist/client/link'
+import SocialLinks from '../components/SocialLinks'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <div>
             <img src="/profile.jpeg" alt="Steven Li - Profile" width="325" height="325" className="rounded-full border-4 border-main-blue m-3"/>
           </div>
+          <SocialLinks/>
         </div>
       </div>
     </Container>
