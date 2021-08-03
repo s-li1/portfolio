@@ -10,7 +10,7 @@ export default function Home() {
         <div className="px-5 flex flex-col justify-evenly md:flex-row w-full p-12">
           <div className="flex flex-col justify-center font-custom font-medium items-start mb-8">
             <h1 className="text-7xl font-semibold">
-              Steven Li.
+              Steven Li. <span className="inline-block align-middle"><img src="/animations/glasses.gif" alt="Glasses Icon" width="85" height="85"/></span>
             </h1>
             <h2 className="text-4xl text-gray-400 mb-6">
               Welcome to my world!
