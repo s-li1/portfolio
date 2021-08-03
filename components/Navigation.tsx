@@ -5,7 +5,9 @@ export default function Navigation() {
     return (
         <>
         <div className="link-underline text-3xl">
-            Steven Li.
+            <NextLink href="/">
+                Steven Li.
+            </NextLink>
         </div>
         <div>
             <NextLink href="/">
