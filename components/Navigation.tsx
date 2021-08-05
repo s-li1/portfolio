@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 export default function Navigation() {
     return (
         <>
-        <div className="link-underline text-3xl">
+        <div className="border-b-4 border-main-blue text-3xl">
             <NextLink href="/">
                 Steven Li.
             </NextLink>
