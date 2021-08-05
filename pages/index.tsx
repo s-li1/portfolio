@@ -1,12 +1,12 @@
-import React from 'react'
-import Container from '../components/Container'
-import Link from 'next/dist/client/link'
-import SocialLinks from '../components/SocialLinks'
+import React from 'react';
+import Container from '../components/Container';
+import Link from 'next/dist/client/link';
+import SocialLinks from '../components/SocialLinks';
 
 export default function Home() {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-center mx-auto mb-10 text-main-black">
+      <div className="flex-col justify-center items-center mx-auto mb-10 text-main-black">
         <div className="px-5 flex flex-col justify-evenly md:flex-row w-full p-12">
           <div className="flex flex-col justify-center font-custom font-medium items-start mb-8">
             <h1 className="text-7xl font-semibold">
