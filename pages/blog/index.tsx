@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import Container from '../components/Container';
+import Container from '../../components/Container';
 
 export default function Blog() {
     return (
