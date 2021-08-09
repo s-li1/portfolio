@@ -19,7 +19,7 @@ export default function Posts() {
         }
     ]
     return (
-        <div className="md:m-10 p-12">
+        <div className="p-12 md:m-10">
             {posts.map((post,index) =>
                     <div className="border-b-2 border-main-gray mb-8 pb-8 md:flex" key={index}>
                         <span className="text-xl">{post.date}</span>
