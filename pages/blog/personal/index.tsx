@@ -5,7 +5,7 @@ import Posts from '../../../components/Posts';
 export default function Personal() {
     return (
        <Container>
-           <div className="p-12 md:ml-10">
+           <div className="p-10 md:ml-10">
             <h1 className="text-4xl font-semibold mb-5">
                 Personal.
             </h1>

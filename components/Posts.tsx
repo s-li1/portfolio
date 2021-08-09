@@ -19,13 +19,13 @@ export default function Posts() {
         }
     ]
     return (
-        <div className="p-12 md:m-10">
+        <div className="p-12 md:mx-10">
             {posts.map((post,index) =>
                     <div className="border-b-2 border-main-gray mb-8 pb-8 md:flex" key={index}>
-                        <span className="text-xl">{post.date}</span>
+                        <span className="text-lg md:mr-5 text-main-blue">{post.date}</span>
                         <div>
-                            <h3 className="text-4xl font-semibold pb-5">{post.title}</h3>
-                            <p className="text-2xl">{post.summary}</p>
+                            <h3 className="text-2xl font-semibold pb-5">{post.title}</h3>
+                            <p className="text-lg">{post.summary}</p>
                         </div>
                     </div>
             )}
