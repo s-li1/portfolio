@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { PropsWithChildren, ReactNode } from 'react';
 import Navigation from './Navigation';
 
-export default function Container(props) {
+export default function Container(props: PropsWithChildren<ReactNode>) {
     const { children } = props;
     const router = useRouter();
     const meta = {
