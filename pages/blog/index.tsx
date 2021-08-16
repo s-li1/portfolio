@@ -6,13 +6,13 @@ export default function Blog() {
     return (
         <Container>
             <div>
-                <h1 className="text-4xl font-semibold p-8 self-center text-center">
+                <h1 className="text-4xl font-semibold p-10 self-center text-center">
                     <span className="inline-block align-middle">
                         <img src="/animations/blog.gif" alt="Code" width="65" height="65"/>
                     </span> 
                     My Blog.
                 </h1>
-                <div className="p-10 md:flex md:justify-around">
+                <div className="px-10 md:flex md:justify-evenly">
                     <Link href="blog/personal">
                     <div className="max-w-lg cursor-pointer transform transition duration-500 hover:scale-105 mb-8">
                         <img className="w-full" src="/blog/personal/personal.jpg" alt="Personal Writing"/>
