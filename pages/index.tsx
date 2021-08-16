@@ -6,9 +6,9 @@ import SocialLinks from '../components/SocialLinks';
 export default function Home() {
   return (
     <Container>
-      <div className="flex-col justify-center items-center mx-auto mb-10 text-main-black">
-        <div className="px-5 flex flex-col justify-evenly md:flex-row w-full p-12">
-          <div className="flex flex-col justify-center font-custom font-medium items-start mb-8">
+      <div className="font-custom font-medium mx-auto mb-10 text-main-black">
+        <div className="flex flex-col justify-evenly w-full p-12 place-items-center md:flex-row">
+          <div className="flex flex-col justify-center items-start mb-8">
             <h1 className="text-7xl font-semibold">
               Steven Li. <span className="inline-block align-middle"><img src="/animations/glasses.gif" alt="Glasses Icon" width="85" height="85"/></span>
             </h1>
