@@ -17,10 +17,10 @@ export default function About() {
                             I’ve always had a passion for technology and seek to build impactful software with a focus on writing clean code.
                         </h2>
                     </div>
-                    <img className="h-full w-full md:max-w-md" src="/bit_cohort.jpeg" alt="Bachelor of Information Technology Cohort 2022"/>
+                    <img className="h-full w-full md:max-w-md md:ml-10" src="/bit_cohort.jpeg" alt="Bachelor of Information Technology Cohort 2022"/>
                 </div>
                 <div className="mb-10 md:flex md:flex-row-reverse">
-                    <div className="md:ml-10">
+                    <div>
                         <h1 className="text-4xl font-semibold mb-8">
                             <span className="inline-block align-middle"><img src="/animations/globe.gif" alt="Globe" width="65" height="65"/></span> Language Learner.
                         </h1>
@@ -28,7 +28,7 @@ export default function About() {
                             Beyond coding, I love improving my cross-cultural understanding through getting involved in extra-curriculars and learning languages. You can find me either dabbling in Mandarin or Japanese!
                         </h2>
                     </div>
-                    <img className="h-full w-full md:max-w-md" src="/acss.png" alt="Australia Chinese Students Society"/>
+                    <img className="h-full w-full md:max-w-md md:mr-10" src="/acss.png" alt="Australia Chinese Students Society"/>
                 </div>
             </div>
         </Container>
