@@ -1,7 +1,14 @@
 interface IPost {
     title: string,
     date: string,
-    summary: string
+    summary: string,
+    author: string,
+    type: string,
+    slug: string
 }
 
-export type { IPost };
+interface IPosts {
+    [index: string]: IPost
+}
+
+export type { IPost, IPosts };
