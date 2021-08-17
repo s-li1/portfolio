@@ -8,7 +8,7 @@ interface IPost {
 }
 
 interface IPosts {
-    [index: string]: IPost
+    [index: string]: IPost[]
 }
 
 export type { IPost, IPosts };
