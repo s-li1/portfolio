@@ -1,8 +1,10 @@
 import React from 'react';
 import Container from '../../../components/Container';
 import BlogPosts from '../../../components/BlogPosts';
+import { GetStaticProps } from 'next';
+import { getAllPosts } from '../../../lib/mdx';
 
-export default function Personal() {
+export default function Personal({posts}) {
     return (
        <Container>
            <div className="p-10 md:ml-10">
@@ -15,3 +17,13 @@ export default function Personal() {
        </Container>
     )
 }
+
+export const getStaticProps: GetStaticProps = async() => {
+    const posts = await getAllPosts('personal');
+    return {
+        props:  {
+            posts
+        }
+    }
+}
+
