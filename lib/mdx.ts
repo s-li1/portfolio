@@ -1,6 +1,7 @@
-import fs, { readFileSync } from 'fs'
+import fs from 'fs'
 import { join } from 'path';
 import matter from 'gray-matter';
+import { IPost } from '../types/types';
 
 const dataDirectory = join(process.cwd(), 'data');
 
@@ -9,7 +10,7 @@ async function getPostBySlug(slug: string): Promise<any> {
     const fullPath = join(dataDirectory, `${realSlug}.mdx`);
 }
 
-async function getAllPosts(type: string): Promise<string[]> {
+async function getAllPosts(type: string): Promise<IPost[]> {
     const blogDirectory = join(dataDirectory, 'blog', type);
     const posts = fs.readdirSync(blogDirectory);
 

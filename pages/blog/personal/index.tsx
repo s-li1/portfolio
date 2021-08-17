@@ -3,8 +3,9 @@ import Container from '../../../components/Container';
 import BlogPosts from '../../../components/BlogPosts';
 import { GetStaticProps } from 'next';
 import { getAllPosts } from '../../../lib/mdx';
+import { IPosts } from '../../../types/types';
 
-export default function Personal({posts}) {
+export default function Personal({ posts }: IPosts) {
     return (
        <Container>
            <div className="p-10 md:ml-10">
@@ -13,7 +14,7 @@ export default function Personal({posts}) {
             </h1>
             <h2 className="text-2xl">Here you will find a bunch of stories about my learnings and experiences.</h2>
            </div>
-           <BlogPosts/>
+           <BlogPosts posts={posts}/>
        </Container>
     )
 }
@@ -21,7 +22,7 @@ export default function Personal({posts}) {
 export const getStaticProps: GetStaticProps = async() => {
     const posts = await getAllPosts('personal');
     return {
-        props:  {
+        props: {
             posts
         }
     }
