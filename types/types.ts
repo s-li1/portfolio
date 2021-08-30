@@ -1,15 +1,22 @@
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
+
 interface IPost {
-    title: string,
-    date: string,
-    summary: string,
-    author: string,
-    type: string,
+    data: IFrontMatter
     slug: string
-    content?: string,
+    content?: string
+    source?: MDXRemoteSerializeResult
 }
 
 interface IPosts {
     [index: string]: IPost[]
 }
 
-export type { IPost, IPosts };
+interface IFrontMatter {
+    title: string,
+    date: string,
+    summary: string,
+    author: string,
+    type: string
+}
+
+export type { IPost, IPosts, IFrontMatter };
