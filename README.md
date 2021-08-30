@@ -1,4 +1,4 @@
-This is my personal webste portfolio!
+This is my personal website portfolio!
 
 ## Built With
 
