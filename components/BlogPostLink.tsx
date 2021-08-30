@@ -4,7 +4,7 @@ import { IPost } from '../types/types';
 
 export default function BlogPostLink(post: IPost) {
     return (
-        <Link href="/">
+        <Link href={`${post.slug}`}>
             <a>
                 <div className="border-b-2 border-main-gray mb-8 pb-8 md:flex">
                     <span className="text-lg md:mr-5 text-main-blue">{post.date}</span>
