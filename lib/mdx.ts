@@ -10,8 +10,7 @@ async function getPostBySlug(slug: string): Promise<any> {
     const fullPath = join(dataDirectory, `${realSlug}.mdx`);
 }
 
-async function getAllPosts(type: string): Promise<IPost[]> {
-    const blogDirectory = join(dataDirectory, 'blog', type);
+async function getAllPosts(): Promise<IPost[]> {
     const posts = fs.readdirSync(blogDirectory);
 
     return posts.reduce((allPosts, slug) => {
@@ -28,4 +27,4 @@ async function getAllPosts(type: string): Promise<IPost[]> {
     }, []);
 }
 
-export { getAllPosts };
+export { getAllPosts, getPostBySlug };
