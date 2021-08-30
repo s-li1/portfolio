@@ -3,7 +3,6 @@ import Container from '../../../components/Container';
 import { GetStaticProps } from 'next';
 import { getAllPosts } from '../../../lib/mdx';
 import { IPosts } from '../../../types/types';
-import BlogPostLink from '../../../components/BlogPostLink';
 import BlogPosts from '../../../components/BlogPosts';
 
 export default function Personal({ posts }: IPosts) {
@@ -21,7 +20,7 @@ export default function Personal({ posts }: IPosts) {
 }
 
 export const getStaticProps: GetStaticProps = async() => {
-    const posts = await getAllPosts('personal');
+    const posts = await getAllPosts();
     return {
         props: {
             posts
