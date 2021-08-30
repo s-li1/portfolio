@@ -5,6 +5,7 @@ interface IPost {
     author: string,
     type: string,
     slug: string
+    content?: string,
 }
 
 interface IPosts {

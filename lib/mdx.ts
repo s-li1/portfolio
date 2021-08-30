@@ -3,11 +3,19 @@ import { join } from 'path';
 import matter from 'gray-matter';
 import { IPost } from '../types/types';
 
-const dataDirectory = join(process.cwd(), 'data');
+const blogDirectory = join(process.cwd(), 'data', 'blog');
 
 async function getPostBySlug(slug: string): Promise<any> {
-    const realSlug = slug.replace(/\.mdx$/, '');
-    const fullPath = join(dataDirectory, `${realSlug}.mdx`);
+    const fullPath = join(blogDirectory, `${slug}.mdx`);
+    const source = fs.readFileSync(fullPath);
+
+    const { data, content } = matter(source);
+
+    return {
+        ...data,
+        content,
+        slug
+    }
 }
 
 async function getAllPosts(): Promise<IPost[]> {
