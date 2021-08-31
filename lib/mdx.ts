@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { join } from 'path';
-import matter, { GrayMatterFile } from 'gray-matter';
+import matter from 'gray-matter';
 import { IFrontMatter, IPost } from '../types/types';
 
 const blogDirectory = join(process.cwd(), 'data', 'blog');
