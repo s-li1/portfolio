@@ -17,8 +17,8 @@ export default function Blog() {
                     My Blog.
                 </h1>
                 <div className="px-10 md:flex md:justify-evenly">
-                    <Link href="blog/personal">
-                    <div className="max-w-lg cursor-pointer transform transition duration-500 hover:scale-105 mb-8">
+                    <Link href="blog/personal" passHref>
+                    <a className="max-w-lg cursor-pointer transform transition duration-500 hover:scale-105 mb-8">
                         <div className="w-full">
                             <Image src={Personal} alt="Personal Writing"/>
                         </div>
@@ -28,10 +28,10 @@ export default function Blog() {
                             </h3>
                             <p className="text-lg">Sharing my journey through life.</p>
                         </div>
-                    </div>
+                    </a>
                     </Link>
-                    <Link href="blog/technical">
-                        <div className="max-w-lg cursor-pointer transform transition duration-500 hover:scale-105">
+                    <Link href="blog/technical" passHref>
+                        <a className="max-w-lg cursor-pointer transform transition duration-500 hover:scale-105">
                             <div className="w-full">
                                 <Image src={Technical} alt="Technical Writing"/>
                             </div>
@@ -39,7 +39,7 @@ export default function Blog() {
                                 <h3 className="text-2xl font-semibold mb-2">Technical</h3>
                                 <p className="text-lg">Sharing my learnings as a developer.</p>
                             </div>
-                        </div>
+                        </a>
                     </Link>
                 </div>
             </div>
