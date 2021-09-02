@@ -6,6 +6,7 @@ import { getPostBySlug, getAllPosts } from '../../lib/mdx';
 import { IPost } from '../../types/types';
 import MDXComponents from '../../components/MDXComponents';
 import Container from '../../components/Container';
+import Image from 'next/image';
 
 export default function Blog({ source, data }: IPost) {
     return (
@@ -14,7 +15,7 @@ export default function Blog({ source, data }: IPost) {
                 <article>
                     <h1 className="text-4xl font-semibold mb-8">{data.title}</h1>
                     <div className="flex items-center space-x-3 mb-8">
-                        <img src="/profile.jpeg" alt="Steven Li" className="rounded-full" width="50" height="50"/>
+                        <Image src="/profile.jpeg" alt="Steven Li" className="rounded-full" width="50" height="50"/>
                         <p>{data.author}</p>
                         <p>{data.date}</p>
                     </div>
