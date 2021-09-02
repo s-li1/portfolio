@@ -9,7 +9,7 @@ import Container from '../../components/Container';
 
 export default function Blog({ source, data }: IPost) {
     return (
-        <Container>
+        <Container title={data.title} descripion={data.summary}>
             <article className="flex-col justify-center items-start max-w-5xl w-full mx-auto px-8">
                 <h1 className="text-4xl font-semibold mb-8">{data.title}</h1>
                 <div className="flex items-center space-x-3 mb-8">

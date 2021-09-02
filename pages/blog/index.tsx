@@ -4,7 +4,7 @@ import Container from '../../components/Container';
 
 export default function Blog() {
     return (
-        <Container>
+        <Container title="Blog - Steven Li" description="Sharing my journey through life and programming">
             <div>
                 <h1 className="text-4xl font-semibold p-10 self-center text-center">
                     <span className="inline-block align-middle">

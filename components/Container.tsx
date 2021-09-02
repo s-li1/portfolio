@@ -1,14 +1,12 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { PropsWithChildren, ReactNode } from 'react';
 import Navigation from './Navigation';
 
-export default function Container(props: PropsWithChildren<ReactNode>) {
-    const { children } = props;
-    const router = useRouter();
+export default function Container(props) {
+    const { children, ...customMeta } = props;
     const meta = {
         title: 'Steven Li',
-        description: 'Information Technology Student, Javascript Nerd'
+        description: 'Information Technology Student, Javascript Nerd',
+        ...customMeta
     }
     return (
         <div className="bg-white font-custom text-main-black">
