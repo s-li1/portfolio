@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from './Footer';
 import Navigation from './Navigation';
 
 export default function Container(props) {
@@ -8,6 +9,7 @@ export default function Container(props) {
         description: 'Information Technology Student, Javascript Nerd',
         ...customMeta
     }
+
     return (
         <div className="bg-white font-custom text-main-black">
             <Head>
@@ -21,6 +23,7 @@ export default function Container(props) {
             <main className="flex-1 overflow-y-auto">
                 {children}
             </main>
+            <Footer/>
         </div>
     )
 }

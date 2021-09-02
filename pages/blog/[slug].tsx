@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { MDXRemote } from 'next-mdx-remote';
 import React from 'react';
 import { serialize } from 'next-mdx-remote/serialize';
 import { getPostBySlug, getAllPosts } from '../../lib/mdx';
@@ -10,17 +10,20 @@ import Container from '../../components/Container';
 export default function Blog({ source, data }: IPost) {
     return (
         <Container title={data.title} descripion={data.summary}>
-            <article className="flex-col justify-center items-start max-w-5xl w-full mx-auto px-8">
-                <h1 className="text-4xl font-semibold mb-8">{data.title}</h1>
-                <div className="flex items-center space-x-3 mb-8">
-                    <img src="/profile.jpeg" alt="Steven Li" className="rounded-full" width="50" height="50"/>
-                    <p>{data.author}</p>
-                    <p>{data.date}</p>
-                </div>
-                <div className="text-xl">
-                    <MDXRemote {...source} components={MDXComponents}/>
-                </div>
-            </article>
+            <div className="flex-col justify-center items-start max-w-5xl w-full mx-auto px-8">
+                <article>
+                    <h1 className="text-4xl font-semibold mb-8">{data.title}</h1>
+                    <div className="flex items-center space-x-3 mb-8">
+                        <img src="/profile.jpeg" alt="Steven Li" className="rounded-full" width="50" height="50"/>
+                        <p>{data.author}</p>
+                        <p>{data.date}</p>
+                    </div>
+                    <div className="text-xl">
+                        <MDXRemote {...source} components={MDXComponents}/>
+                    </div>
+                </article>
+                <hr className="my-20 border-main-blue"/>
+            </div>
         </Container>
     )
 }
