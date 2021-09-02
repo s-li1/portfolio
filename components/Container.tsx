@@ -3,7 +3,7 @@ import Footer from './Footer';
 import Navigation from './Navigation';
 
 export default function Container(props) {
-    const { children, ...customMeta } = props;
+    const { children, displayFooter, ...customMeta } = props;
     const meta = {
         title: 'Steven Li',
         description: 'Information Technology Student, Javascript Nerd',
@@ -23,7 +23,9 @@ export default function Container(props) {
             <main className="flex-1 overflow-y-auto">
                 {children}
             </main>
-            <Footer/>
+            <footer>
+                {displayFooter ? <Footer/> : ''}
+            </footer>
         </div>
     )
 }

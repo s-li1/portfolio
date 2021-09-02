@@ -3,7 +3,7 @@ import Container from '../components/Container';
 
 export default function About() {
     return (
-        <Container title="About - Steven Li">
+        <Container title="About - Steven Li" displayFooter={true}>
             <div className="flex-col text-main-black p-10 md:flex md: items-center">
                 <div className="mb-20 md:flex">
                     <div>
