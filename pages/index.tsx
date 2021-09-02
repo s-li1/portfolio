@@ -23,9 +23,9 @@ export default function Home() {
             </h3>
             <h3 className="text-3xl mb-8">based in Sydney, Australia.</h3>
             <Link href="/about">
-              <a className="text-main-blue text-2xl font-normal rounded border-2 border-main-blue p-3 transform transition duration-500 hover:scale-110">
+              <button className="text-main-blue text-2xl font-normal rounded border-2 border-main-blue p-3 transform transition duration-500 hover:scale-110">
                 About Me
-              </a>
+              </button>
             </Link>
           </div>
           <div>
