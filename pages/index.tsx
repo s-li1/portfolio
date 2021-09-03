@@ -9,7 +9,7 @@ import Profile from '../public/profile.jpeg';
 export default function Home() {
   return (
     <Container>
-      <div className="absolute inset-0 flex items-center justify-center font-custom font-medium mx-auto mb-10 text-main-black">
+      <div className="flex items-center justify-center font-custom font-medium mx-auto mb-10 text-main-black md:absolute md:inset-0">
         <div className="flex flex-col justify-evenly w-full p-12 place-items-center md:flex-row">
           <div className="flex flex-col justify-center items-start mb-8">
             <h1 className="text-7xl font-semibold">
