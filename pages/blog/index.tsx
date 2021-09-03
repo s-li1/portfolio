@@ -11,7 +11,7 @@ export default function Blog() {
         <Container title="Blog - Steven Li" description="Sharing my journey through life and programming">
             <div className="text-center md:flex md:justify-center md:items-center md:absolute md:inset-0">
                 <div>
-                    <h1 className="text-4xl font-semibold p-10 self-center text-center">
+                    <h1 className="text-4xl font-semibold p-10 self-center text-center md:my-10">
                         <span className="inline-block align-middle">
                             <Image src={Document} alt="Code" width="65" height="65"/>
                         </span> 
