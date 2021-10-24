@@ -4,7 +4,7 @@ import Link from 'next/dist/client/link';
 import SocialLinks from '../components/SocialLinks';
 import Image from 'next/image';
 import Glasses from '../public/animations/glasses.gif'
-import Profile from '../public/profile.jpeg';
+import AnimatedProfile from '../components/AnimatedProfile';
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Image src={Profile} alt="Steven Li - Profile" width="325" height="325" objectFit="cover" className="rounded-full m-3"/>
+            <AnimatedProfile/>
           </div>
           <SocialLinks/>
         </div>
