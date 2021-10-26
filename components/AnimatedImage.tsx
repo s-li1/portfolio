@@ -1,6 +1,4 @@
-import { once } from "events";
 import { motion } from "framer-motion";
-import Profile from '../public/profile.jpeg';
 import Image from "next/dist/client/image";
 import { useState } from "react";
 
